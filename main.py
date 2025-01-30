@@ -8,7 +8,6 @@ SIMILAR_ACCOUNT = "ACCOUNT_USERNAME"
 USERNAME = "YOUR_USERNAME"
 PASSWORD = "YOUR_PASSWORD"
 
-
 class InstaFollower:
 
     def __init__(self):
@@ -65,7 +64,6 @@ class InstaFollower:
             except ElementClickInterceptedException:
                 cancel_button = self.driver.find_element(by=By.XPATH, value="//button[contains(text(), 'Cancel')]")
                 cancel_button.click()
-
 
 bot = InstaFollower()
 bot.login()
